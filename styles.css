@@ -1,0 +1,83 @@
+:root {
+  /* Colors */
+  --background: #FAF9F7;
+  --grey-0: #000;
+  --grey-24: #3D3D3D;
+  --grey-88: #DFDFDF;
+  --white: #FFF;
+  --brand-color-primary: #00C88C;
+  --brand-color-secondary: #5E20A4;
+  --overlay: linear-gradient(314.72deg, #C86DD7 -1.5%, #7E49C3 39.43%, #5912AC 86.02%);
+
+  /* Fonts */
+  --body-font: 'Inter', sans-serif;
+
+  /* Font sizes */
+  --main-title: 2.8rem;
+  --section-title: 2.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Convert default font size to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*===== HEADER =====*/
+.header {
+  background: transparent;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.header a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.badge {
+  height: 6rem;
+  margin-left: 2rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar>ul>li {
+  display: inline;
+  margin-left: 3.2rem;
+}
+
+.user-login {
+  margin-right: 3.2rem;
+}
+
+.button {
+  padding: 1.2rem 2.2rem;
+  background: var(--brand-color-primary);
+  border-radius: 0.4rem;
+}
+
+.user-login>.button {
+  margin-right: 2.2rem;
+}
